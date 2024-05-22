@@ -15,69 +15,68 @@
     h2 {
         background-color: #C0262C;
         background-image: url(multimidia/importante-saber.jpg),
-        url(multimidia/back-bolinha.gif);
-        background-repeat: no-repeat, repeat;
-        background-position: center right, center center;
-        width: 470px;
-        padding: 61px 400px 61px 100px;
-        color: #FFFFFF;
-        font-size: 2.5em;
-        letter-spacing: .1em;
+        url(multimidia/back-bolinha.gif); /* coloca dua imagens de fundo */
+        background-repeat: no-repeat, repeat; /* usada para manipular quantas vezes uma imagem vai repetir ou não */
+        background-position: center right, center center; /* manipula a posição da imagem*/
+        width: 470px; /* manipula o comprimento da imagem no total */
+        padding: 61px 400px 61px 100px; /* espaçamento das imagens repetidas(nesse caso as bolinhas) */
+        color: #FFFFFF; /* cor da letra */
+        font-size: 2.5em; 
+        letter-spacing: .1em; /* espaçamento dos elementos ou caracteres de um texto */
     }
  
-    figcaption {
-        background-color: #C0262C;
+    figcaption { /* representa a legenda para uma figura */
+        background-color: #C0262C; 
         padding: 7px 0;
         color: #FFFFFF;
         font-size: 1.5em;
     }
  
-    figure {
-        border: #C0262C solid thin;
-        border-radius: 35px 35px 0 0;
+    figure { /* marca diagramas, ilustrações e fotos juntamente do figcaption */
+        border: #C0262C solid thin; /* define a cor da borda */
+        border-radius: 35px 35px 0 0; /* define uma borda redonda */
         padding: 20px 0 0;
         text-align: center;
     }
  
     ul li {
-        list-style-type: none;
-        list-style-image: url(multimidia/ossinho.png);
-        list-style-position: inside;
-        margin: 30px 0;
+        list-style-type: none; /* tira os pontos vindos juntamente da lista não ordenada */
+        list-style-image: url(multimidia/ossinho.png); /* altera a imagem dos marcadores de uma lista */
+        list-style-position: inside; /* altera a posição dos marcadores numa lista, colocando o ossosinho logo a frente */
+        margin: 30px 0; /* acrescenta um espa~çamento entre os marcadores(ossos) */
     }
  
-    dt {
+    dt { /* dt define um termo */
         color: #FFF;
         background-color: #C0262C;
         padding: 7px;
     }
  
-    dd {
+    dd { /* dd denota a descrição de um termo */
         border: thin #C0262C solid;
         border-radius: 0 0 25px 25px;
-        margin-top: -3px;
-        margin-bottom: 30px;
+        margin-top: -3px; /* define a margem do elemento superior para outra */
+        margin-bottom: 30px; /* define a margem do elemento inferior para outra */
         padding: 20px 20px 0;
     }
  
     ol {
         list-style-type: none;
-        white-space: pre;
-        line-height: .9em;
+        white-space: pre; /* acrescenta um espaço em branco que pode ser tratado e alterado e como faze-lo */
+        line-height: .9em; /* altura da linha */
         /* definir a variável de contagem */
-        counter-reset: contador;
+        counter-reset: contador; /* criação de um contador */
     }
  
     ol li:before {
         color: #999999;
         /* incrementar a variável em 1 */
-        counter-increment: contador;
-        /* usar o número do contador como conteúdo */
-        content: "Questão " counter(contador) " \00BB ";
+        counter-increment: contador; /* incrementa a variavel em 1 */
+        content: "Questão " counter(contador) " \00BB "; /* usar o número do contador como conteúdo */
     }
  
     ul li a {
-        text-decoration: none;
+        text-decoration: none; /* retira a decoração de um texto */
         color: #C0262C;
         font-weight: bold;
         padding: 7px;
@@ -92,7 +91,7 @@
         color: #C0262C;
         font-weight: bold;
         padding: 7px;
-        display: inline-block;
+        display: inline-block; /* define o comportamento de um elemento na tela, com o objetivo de ter tudo em uma mesma linha através de um bloco */
     }
 
     dd a[target="_blank"] :hover {
@@ -104,7 +103,7 @@
         color: #C0262C;
         font-weight: bold;
         padding: 7px 0 7px 30px;
-        background: url(multimidia/seta-voltar.png) no-repeat left center;
+        background: url(multimidia/seta-voltar.png) no-repeat left center; /* coloca uma imagem de fundo, não repetindo ela e a colocando a esquerda no centro */
     }
 
     dd a[href="#top"]:hover {

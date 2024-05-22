@@ -1,31 +1,31 @@
 h1 {
-    color: #C0262C;
+    color: #C0262C; /* cor da letra do h1 em específico */
     font-size: 2.5em; /* 40/16=2.5 */
-    border-bottom: #C0262C solid thin;
-    padding-bottom: 7px;
+    border-bottom: #C0262C solid thin; /* acrescenta uma borda(sólida) vermelha com 1px para todos os lados com o "thin" descendo para baixo com a linha na horizontal(border bottom) */
+    padding-bottom: 7px; /* desecendo o h1(e o que estiver contido nele para baixo) na horizontal */
 }
  
 h2 {
-    font-size: 1.75em; /* 28/16=1.75 */
+    font-size: 1.75em; /* tamanho da fonte do texto no h2 em específico, calculo do "em" -> (28/16=1.75) */
 }
  
 p {
-    font-size: 1.1em;
-    line-height: 1.3em;
-    text-align: justify;
+    font-size: 1.1em; /* tamanho da fonte do texto contido no paragrafo, em "em" */
+    line-height: 1.3em; /* define a altura da caixa de texto do paragrafo */
+    text-align: justify; /* alinha o texto só de forma simetrica */
 }
  
-p::first-line {
-    font-size: 1.17em;
-    font-variant: small-caps;
-    font-weight: bolder;
-    font-style: italic;
+p::first-line { /* pega somente a primeira linha do paragrafo */
+    font-size: 1.17em; /* tamanho da fonte do texto no contido paragrafo, em "em" */
+    font-variant: small-caps; /* define se a fonte da letra vai ser normal ou letras grandes em tamanho reduzido(small-caps) */
+    font-weight: bolder; /* define a claridade da letra, nesse caso em evidencia(bolder) */
+    font-style: italic; /* estilo da fonte, nesse caso italiano */
 }
  
 hr {
-    border-color: #C0262C;
+    border-color: #C0262C; /* cor da borda*/
 }
  
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* altera um conjunto de texto conforme a primeira escolha do tipo de fonte, se não funcionar no browser ele tentara a segunda e depois a terceira */
 }
